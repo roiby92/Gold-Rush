@@ -1,0 +1,15 @@
+In this game there should be two players.
+
+Player 1 will control their player using the WASD keys, and Player 2 should use the IJKL keys.
+
+A player may not move to a location on the board that has a wall or another player,
+but they should get 10 points any time they move to a location with a coin on it. 
+In this case, the coin should disappear from the board.
+
+
+
+You're on your own for this project, but here are some suggestions to make your work more organized:
+
+Start by creating a fixed 5x5 board
+This board should display Player 1 on the top left corner, and Player 2 on the bottom right corner
+You should write some methods that, when invoked, will alter the player in that direction
