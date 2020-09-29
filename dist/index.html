@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gold Rush</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="playground">
+
+        </div>
+        <div id="score">
+
+        </div>
+        <div id="controller">
+            <button id='start'>Start Game</button>
+            <input type="number" id='rows' placeholder="please enter number of rows">
+            <input type="number" id='columns' placeholder="please enter number of columns">
+        </div>
+    </div>
+
+    <script id="matrix-template" type="text/x-handlebars-template">
+            {{#each row}}
+                <div class="square">
+                    <div class="s{{this}}"></div>
+                </div>
+            {{/each}}
+    </script>
+    <script id="score1-template" type="text/x-handlebars-template">
+                    <div class="p1">player 1 : {{points}}</div>
+    </script>
+
+    <script id="score2-template" type="text/x-handlebars-template">
+                    <div class="p2">player 2 : {{points}}</div>
+    </script>
+
+
+    <script src="../node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="classes/Matrix.js"></script>
+    <script src="classes/GoldRush.js"></script>
+    <script src="classes/Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
